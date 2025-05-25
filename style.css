@@ -418,14 +418,16 @@
     .hero {
       height: 480px;
     }
+
+    .secondary__nav {
+      & .nav__list {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        gap: 1.6rem;
+      }
+    }
+
   }
 
-  .secondary__nav {
-    & .nav__list {
-      grid-template-columns: 1fr;
-      grid-template-rows: repeat(4, 1fr);
-      gap: 1.6rem;
-    }
-  }
 
 }
